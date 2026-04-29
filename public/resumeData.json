@@ -35,7 +35,21 @@
         "school": "Dilla University",
         "degree": "Bachelor of Science in Computer Science",
         "graduated": "July 2022",
-        "description": "Graduated with Computer Science."
+        "description": "Graduated with Honors in Computer Science, focusing on Software Engineering disciplines.",
+        "certificates": [
+          {
+            "name": "Hakaton",
+            "link": "https://drive.google.com/file/d/1kBy_Z1HjrMRgaazzMgosDJysx1iwNz9v/view?usp=drive_link"
+          },
+          {
+            "name": "Charity",
+            "link": "https://drive.google.com/file/d/1kBy_Z1HjrMRgaazzMgosDJysx1iwNz9v/view?usp=drive_link"
+          },
+          {
+            "name": "Leadership",
+            "link": "https://drive.google.com/file/d/1w_-eD6CPdVZZ4nvO-IYMJFI8NP0g8h-1/view?usp=drive_link"
+          }
+        ]
       }
     ],
     "work": [
@@ -90,37 +104,37 @@
       {
         "title": "Foreign & Local Procurement",
         "category": "Comprehensive Odoo workflow automation for global sourcing, dynamic vendor management, and multi-currency landed cost tracking.",
-        "image": "01.jpg",
+        "image": "procurement.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Sales & Export Management",
         "category": "End-to-end sales pipelines customized for international trade, automated export documentation, and comprehensive logistics tracking.",
-        "image": "02.jpg",
+        "image": "sales.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Workshop Management",
         "category": "Equipment lifecycle tracking, digitized job cards, predictive maintenance scheduling, and dynamic resource allocation within Odoo.",
-        "image": "03.jpg",
+        "image": "workshop.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Accounting & HR Management",
         "category": "Unified financial reporting, localized payroll automation, multi-level approval systems, and complete employee lifecycle management.",
-        "image": "04.jpg",
+        "image": "accounting.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Advanced Integrations & Microservices",
         "category": "Built robust microservices architecture for Odoo, integrating hardware POS machines and setting up automated Email/SMS notification gateways.",
-        "image": "05.jpg",
+        "image": "integration.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Asset & Attendance Systems",
         "category": "Streamlined internal HR operations with biometric attendance integrations and deployed comprehensive asset lifecycle management tracking.",
-        "image": "06.jpg",
+        "image": "asset.png",
         "url": "https://github.com/mebi-wz"
       }
     ]

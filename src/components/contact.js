@@ -40,7 +40,7 @@ const Contact = ({ data }) => {
       .then(response => response.json())
       .then(result => {
         if (result.success === "true") {
-          alert("Message sent successfully! Note: You may need to check your email inbox to verify the first submission.");
+          alert("Your message is sent to Mehbuba. She will communicate with you as soon as possible.");
           setFormData({ fname: "", uemail: "", Subject: "", message1: "" });
         } else {
           alert("Failed to send message: " + result.message);

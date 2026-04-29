@@ -14,6 +14,20 @@ const Resume = ({ data }) => {
         <em className="date">{edu.graduated}</em>
       </p>
       <p>{edu.description}</p>
+      {edu.certificates && (
+        <div className="education-certificates">
+          <h4>Certifications:</h4>
+          <ul className="cert-list">
+            {edu.certificates.map(cert => (
+              <li key={cert.name}>
+                <a href={cert.link} target="_blank" rel="noreferrer" className="cert-pill">
+                  <i className="fa fa-certificate"></i> {cert.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   ));
 
@@ -30,9 +44,14 @@ const Resume = ({ data }) => {
 
   const skillList = skills.map((skill) => {
     return (
-      <div key={skill.name} className="skill-chip">
-        <span className="skill-name">{skill.name}</span>
-        <span className="skill-level-pill">{skill.level}</span>
+      <div key={skill.name} className="skill-card-modern">
+        <div className="skill-header">
+           <span className="skill-name">{skill.name}</span>
+           <span className="skill-level-text">{skill.level}</span>
+        </div>
+        <div className="skill-bar-bg">
+           <div className="skill-bar-fill" style={{ width: skill.level }}></div>
+        </div>
       </div>
     );
   });

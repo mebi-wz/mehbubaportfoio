@@ -190,8 +190,9 @@ header .banner-text h1 {
    bottom: auto;
    left: auto;
    transform: none;
-   margin: 0 auto 24px auto;
-   animation: fadeIn 0.4s ease;
+   width: 100%;
+   height: 100%;
+   margin: 0;
    border: 3px solid var(--primary-color);
 }
 
@@ -253,6 +254,74 @@ header .banner-text h1 {
    transition: all 0.3s ease;
 }
 
+/* 3D Flip Card */
+.profile-flip-container {
+  background-color: transparent;
+  width: 100%;
+  max-width: 320px;
+  height: 320px;
+  perspective: 1000px;
+  margin: 0 auto 30px auto;
+  cursor: pointer;
+  position: relative;
+  animation: floatAnimation 5s ease-in-out infinite;
+}
+
+.profile-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.profile-flip-container.is-flipped .profile-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.profile-flip-front, .profile-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-flip-back {
+  transform: rotateY(180deg);
+}
+
+.profile-flip-front .mehbubaimag {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-flip-container:hover .profile-flip-front .mehbubaimag {
+   transform: scale(1.05) translateY(-10px);
+   box-shadow: 0 30px 60px rgba(16, 185, 129, 0.4);
+   border-color: var(--accent-color);
+}
+
+/* Typing cursor animation */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  font-weight: 300;
+  color: var(--primary-color);
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
 .linkedin-custom-badge .badge-connect-btn:hover {
    background: #005582;
    transform: translateY(-2px);
@@ -267,6 +336,72 @@ header .banner-text h3 {
    line-height: 1.6;
    max-width: 950px;
    letter-spacing: 0.01em;
+}
+
+.hero-contact-card {
+   margin-top: 40px;
+   padding: 16px 24px;
+   background: rgba(2, 6, 23, 0.5);
+   border: 1px solid var(--glass-border);
+   border-radius: 12px;
+   display: inline-block;
+   backdrop-filter: blur(10px);
+   border-left: 3px solid var(--primary-color);
+}
+
+.hero-contact-card p {
+   margin: 0;
+   font-size: 15px;
+   color: rgba(255, 255, 255, 0.9);
+   font-weight: 400;
+}
+
+.hero-soft-skills-wrapper {
+   margin: 30px auto 0 auto;
+   max-width: 400px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+   justify-content: center;
+}
+
+.floating-skill-pill {
+   background: rgba(2, 6, 23, 0.6);
+   border: 1px solid var(--primary-color);
+   color: rgba(255, 255, 255, 0.9);
+   padding: 8px 16px;
+   border-radius: 20px;
+   font-size: 13px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   backdrop-filter: blur(8px);
+   box-shadow: 0 4px 15px rgba(16, 185, 129, 0.15);
+   animation: floatAnimation 4s ease-in-out infinite;
+   opacity: 0;
+   animation-fill-mode: forwards;
+}
+
+.floating-skill-pill i {
+   color: var(--primary-color);
+   font-size: 14px;
+}
+
+.pill-delay-1 { animation: floatFadeIn 4s ease-in-out forwards 3.2s, floatAnimation 4s ease-in-out infinite 3.5s; }
+.pill-delay-2 { animation: floatFadeIn 4s ease-in-out forwards 3.6s, floatAnimation 3.5s ease-in-out infinite 3.8s; }
+.pill-delay-3 { animation: floatFadeIn 4s ease-in-out forwards 4.0s, floatAnimation 4.5s ease-in-out infinite 4.2s; }
+
+@keyframes floatFadeIn {
+   0% { opacity: 0; transform: translateY(10px); }
+   10% { opacity: 1; transform: translateY(0); }
+   100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatAnimation {
+   0% { transform: translateY(0); opacity: 1; }
+   50% { transform: translateY(-5px); opacity: 1; }
+   100% { transform: translateY(0); opacity: 1; }
 }
 
 .modern-actions {
@@ -613,40 +748,66 @@ ul#nav li a:hover, ul#nav li.current a {
    margin-top: 40px;
 }
 
-.skill-chip {
+.skill-card-modern {
    background: var(--surface-color);
    border: 1px solid var(--glass-border);
-   padding: 12px 24px;
-   border-radius: 12px;
-   display: flex;
-   align-items: center;
-   gap: 15px;
+   padding: 20px 24px;
+   border-radius: 16px;
+   width: calc(50% - 8px);
    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-   cursor: default;
 }
 
-.skill-chip:hover {
+@media only screen and (max-width: 768px) {
+   .skill-card-modern { width: 100%; }
+}
+
+.skill-card-modern:hover {
    background: var(--glass-bg);
    border-color: var(--primary-color);
    transform: translateY(-5px);
    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.15);
 }
 
-.skill-name {
+.skill-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 16px;
+}
+
+.skill-header .skill-name {
    font-weight: 700;
    color: var(--text-color);
-   font-size: 18px; /* Increased from 15px */
+   font-size: 16px;
    letter-spacing: 0.5px;
 }
 
-.skill-level-pill {
-   font-size: 13px; /* Increased from 11px */
+.skill-header .skill-level-text {
+   font-size: 14px;
    font-weight: 800;
    color: var(--primary-color);
-   background: rgba(16, 185, 129, 0.1);
-   padding: 4px 12px;
-   border-radius: 8px;
-   text-transform: uppercase;
+}
+
+.skill-bar-bg {
+   width: 100%;
+   height: 8px;
+   background: rgba(255,255,255,0.05);
+   border-radius: 4px;
+   overflow: hidden;
+}
+
+.skill-bar-fill {
+   height: 100%;
+   background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+   border-radius: 4px;
+   box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+   animation: fillBar 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+   transform-origin: left;
+}
+
+@keyframes fillBar {
+   0% { transform: scaleX(0); }
+   100% { transform: scaleX(1); }
 }
 
 .skill-message {
@@ -741,6 +902,52 @@ ul#nav li a:hover, ul#nav li.current a {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }  */
+
+/* Certificates */
+.education-certificates {
+   margin-top: 15px;
+}
+
+.education-certificates h4 {
+   font-size: 16px;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
+.cert-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+}
+
+.cert-pill {
+   display: inline-flex;
+   align-items: center;
+   background: rgba(16, 185, 129, 0.1);
+   color: var(--primary-color);
+   padding: 6px 14px;
+   border-radius: 20px;
+   font-size: 13px;
+   font-weight: 600;
+   border: 1px solid rgba(16, 185, 129, 0.3);
+   transition: all 0.3s ease;
+   text-decoration: none;
+}
+
+.cert-pill i {
+   margin-right: 6px;
+   font-size: 14px;
+}
+
+.cert-pill:hover {
+   background: var(--primary-color);
+   color: #fff;
+   transform: translateY(-2px);
+   box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
