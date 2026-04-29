@@ -1,175 +1,127 @@
 {
   "main": {
-    "name":"Mehbuba Abera",
-    "description":"I am software engineer and I use react  to develop pages",
-    "image":"img4.jpg",
-    "bio":" I m self -motivated, diligent, flexible and proactive to the dynamics changing of the glob that makes me a prime soft ware engineer",
-    "contactmessage":"You can reach me in this address.",
+    "name": "Mehbuba Abera",
+    "description": "Senior Odoo Developer | ERP Customization & Implementation Specialist | Backend Architect",
+    "image": "picture2.png",
+    "bio": "Odoo-focused Software Developer with hands-on experience in ERP customization, implementation, and optimization across Odoo Community and Enterprise (Odoo.sh). I specialize in delivering practical ERP solutions, debugging complex production issues, and aligning systems with real business workflows. With a strong background in Python, Node.js, and PostgreSQL, I bring both technical execution and team leadership to every project.",
+    "contactmessage": "I'm always open to discussing new ERP implementations, custom Odoo modules, or technical leadership opportunities.",
     "email": "Mehbubazed@gmail.com",
-    "phone": "+251-945-719-223",
-    "github":"https://github.com/imma-yene/",
-    "project":"https://github.com/imma-yene/",
-    "address":{
-      "street":"(Jacros Main Street)",
-      "city":"(Addis Ababa)",
-      "state":"(Ethiopia)",
-      "zip": " "
+    "phone": "+251945719223",
+    "github": "https://github.com/mebi-wz",
+    "project": "https://github.com/mebi-wz",
+    "address": {
+      "city": "Addis Ababa",
+      "state": "Ethiopia"
     },
-    "website": " ",
-    "resumedownload":"",
-    "social":[
+    "website": "https://www.linkedin.com/in/mehbubazed/",
+    "resumedownload": "https://drive.google.com/file/d/1vyFhyY_XwwgYXGiAzvFh6m1Wf10koKGA/view?usp=sharing",
+    "social": [
       {
-        "name":"facebook",
-        "url":"https://github.com/imma-yene",
-        "className":"fa fa-facebook"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/mehbubazed/",
+        "className": "fa fa-linkedin"
       },
       {
-        "name":"twitter",
-        "url":"http://twitter.com/mehbubaz",
-        "className":"fa fa-twitter"
-      },
-      {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/mehbubazed/",
-        "className":"fa fa-linkedin"
-      },
-      {
-        "name":"instagram",
-        "url":"http://instagram.com/",
-        "className":"fa fa-instagram"
-      },
-      {
-        "name":"github",
-        "url":"https://github.com/imma-yene/",
-        "className":"fa fa-github"
+        "name": "github",
+        "url": "https://github.com/mebi-wz",
+        "className": "fa fa-github"
       }
     ]
   },
-  "resume":{
-    "skillmessage":" My Project Experiance,During internship  “documentation and implementation in software” specially in website development at South ICT in Hawassa for 2 months.BSc Project  “web-based student Management with parent control and I use asp.net mvc frame work.3rd year semester project: “Police station management system with php”Android app in incubation center ",
-    "education":[
+  "resume": {
+    "skillmessage": "Specialized in Python-based Odoo frameworks, full-stack Node.js development, and large-scale ERP architecture.",
+    "education": [
       {
-        "school":"University",
-        "degree":"Bachelor in Computer Science",
-        "graduated":"July 2022",
-        "description":" Proactive BSc holder in computer science at Dilla University with good academic achievement CGPA of3.80 and volunteering experience, Possess basic knowledge of networking, different programing languages base management courses Programming/Scripting Languages: C++, Java, SQL, python,  JavaScript,PHP, HTML and CSS (Proficient), C # asp.net framework,react js ,MERN "
+        "school": "Dilla University",
+        "degree": "Bachelor of Science in Computer Science",
+        "graduated": "July 2022",
+        "description": "Graduated with Computer Science."
       }
-     
     ],
-    "work":[
+    "work": [
       {
-        "company":"Hagbes Private Limited company",
-        "title":"Junier software developer ",
-        "years":"Nov 2022 - Present",
-        "description":"Development of website for the company based on thier requierment using .net frame work"
+        "company": "Droga Consulting",
+        "title": "Senior Odoo Developer",
+        "years": "Nov 2025 - Present",
+        "description": "Customizing Odoo Community and Enterprise (Odoo.sh) modules focusing on finance, inventory, purchasing, and landed cost workflows. Implementing payment request workflows with multi-level approval logic and managing CI/CD pipelines."
+      },
+      {
+        "company": "Hagbes Plc",
+        "title": "Acting Software Head",
+        "years": "Dec 2024 - Nov 2025",
+        "description": "Led Odoo ERP implementation across Accounting, Purchasing, Inventory, HR, and Sales CRM. Mentored developers and oversaw architecture combining Odoo with Node.js services, Docker, Consul, and PostgreSQL."
+      },
+      {
+        "company": "Hagbes Plc",
+        "title": "Software Developer",
+        "years": "Dec 2022 - Aug 2024",
+        "description": "Customized and implemented Odoo modules across HR and Finance. Developed backend services using Node.js and PostgreSQL. Built workflow automation systems for leave requests and asset transfers."
       }
-     
     ],
-    "skills":[
-     
+    "skills": [
       {
-        "name":"Python",
-        "level":"60%"
+        "name": "Odoo Framework & Python",
+        "level": "95%"
       },
       {
-        "name":"mern",
-        "level":"55%"
+        "name": "ERP Implementation & Customization",
+        "level": "95%"
       },
       {
-        "name":"ReactJs",
-        "level":"50%"
+        "name": "PostgreSQL & Database Optimization",
+        "level": "90%"
       },
       {
-        "name":"CSS",
-        "level":"90%"
+        "name": "Node.js & Microservices",
+        "level": "85%"
       },
       {
-        "name":"PHP",
-        "level":"80%"
+        "name": "Docker & CI/CD (Odoo.sh)",
+        "level": "80%"
       },
       {
-        "name":".net",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
+        "name": "Workflow Automation",
+        "level": "90%"
       }
     ]
   },
-  "portfolio":{
+  "portfolio": {
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title": "Foreign & Local Procurement",
+        "category": "Comprehensive Odoo workflow automation for global sourcing, dynamic vendor management, and multi-currency landed cost tracking.",
+        "image": "01.jpg",
+        "url": "https://github.com/mebi-wz"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title": "Sales & Export Management",
+        "category": "End-to-end sales pipelines customized for international trade, automated export documentation, and comprehensive logistics tracking.",
+        "image": "02.jpg",
+        "url": "https://github.com/mebi-wz"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "Workshop Management",
+        "category": "Equipment lifecycle tracking, digitized job cards, predictive maintenance scheduling, and dynamic resource allocation within Odoo.",
+        "image": "03.jpg",
+        "url": "https://github.com/mebi-wz"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title": "Accounting & HR Management",
+        "category": "Unified financial reporting, localized payroll automation, multi-level approval systems, and complete employee lifecycle management.",
+        "image": "04.jpg",
+        "url": "https://github.com/mebi-wz"
       },
       {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
+        "title": "Advanced Integrations & Microservices",
+        "category": "Built robust microservices architecture for Odoo, integrating hardware POS machines and setting up automated Email/SMS notification gateways.",
+        "image": "05.jpg",
+        "url": "https://github.com/mebi-wz"
       },
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title": "Asset & Attendance Systems",
+        "category": "Streamlined internal HR operations with biometric attendance integrations and deployed comprehensive asset lifecycle management tracking.",
+        "image": "06.jpg",
+        "url": "https://github.com/mebi-wz"
       }
     ]
   }

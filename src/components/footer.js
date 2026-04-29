@@ -1,17 +1,25 @@
+import React from "react";
 import Fade from "react-reveal";
-function Footer(){
-return (
+
+const Footer = ({ data }) => {
+  if (!data) return null;
+
+  const networks = data.social.map((network) => (
+    <li key={network.name}>
+      <a href={network.url}>
+        <i className={network.className}></i>
+      </a>
+    </li>
+  ));
+
+  return (
     <footer>
       <div className="row">
         <Fade bottom>
           <div className="twelve columns">
-            <ul className="social-links">networks</ul>
-
+            <ul className="social-links">{networks}</ul>
             <ul className="copyright">
-              <li>&copy; Mehbubazed</li>
-              <li>
-                  2022 
-              </li>
+              <li>&copy; {new Date().getFullYear()} {data.name}</li>
             </ul>
           </div>
         </Fade>
@@ -24,5 +32,6 @@ return (
       </div>
     </footer>
   );
-}
+};
+
 export default Footer;

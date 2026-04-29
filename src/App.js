@@ -1,57 +1,48 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import ReactGA from "react-ga";
-import $ from "jquery";
 import "./App.css";
-import Header from "./componet/Header";
-import Footer from "./componet/footer";
-import About from "./componet/about";
-import Resume from "./componet/resume";
-import Portfolio from "./componet/portfolio";
-import Contact from "./componet/contact";
+import Header from "./components/Header";
+import Footer from "./components/footer";
+import About from "./components/about";
+import Resume from "./components/resume";
+import Portfolio from "./components/portfolio";
+import Contact from "./components/contact";
+import CustomCursor from "./components/CustomCursor";
+import NoiseOverlay from "./components/NoiseOverlay";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      foo: "bar",
-      resumeData: {}
-    };
+const App = () => {
+  const [resumeData, setResumeData] = useState({});
 
+  useEffect(() => {
     ReactGA.initialize("UA-110570651-1");
     ReactGA.pageview(window.location.pathname);
-  }
 
-  getResumeData() {
-    $.ajax({
-      url: "./resumeData.json",
-      dataType: "json",
-      cache: false,
-      success: function(data) {
-        this.setState({ resumeData: data });
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.log(err);
-        alert(err);
+    const getResumeData = async () => {
+      try {
+        const response = await fetch("./resumeData.json");
+        const data = await response.json();
+        setResumeData(data);
+      } catch (error) {
+        console.error("Error fetching resume data:", error);
       }
-    });
-  }
+    };
 
-  componentDidMount() {
-    this.getResumeData();
-  }
+    getResumeData();
+  }, []);
 
-  render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} />
-        
-        <Contact data={this.state.resumeData.main} />
-        <Footer data={this.state.resumeData.main} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="App">
+      <CustomCursor />
+      <NoiseOverlay />
+      <Header data={resumeData.main} />
+      <About data={resumeData.main} />
+      <Resume data={resumeData.resume} />
+      {/* Portfolio component was missing in original render but imported, adding it back if needed or keeping structure */}
+      <Portfolio data={resumeData.portfolio} />
+      <Contact data={resumeData.main} />
+      <Footer data={resumeData.main} />
+    </div>
+  );
+};
 
 export default App;
