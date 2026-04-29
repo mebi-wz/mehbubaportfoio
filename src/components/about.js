@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal";
+import Fade from "../reveal";
 import useMagnetic from "../hooks/useMagnetic";
 
 const About = ({ data }) => {

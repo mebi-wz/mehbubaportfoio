@@ -1,6 +1,6 @@
 import React from "react";
 import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import Fade from "../reveal";
 
 const Portfolio = ({ data }) => {
   if (!data) return null;

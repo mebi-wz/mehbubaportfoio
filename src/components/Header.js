@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Fade from "react-reveal";
+import Fade from "../reveal";
 import { Container, Row, Col } from "react-grid-system";
 
 const Typewriter = ({ text, delay = 0 }) => {

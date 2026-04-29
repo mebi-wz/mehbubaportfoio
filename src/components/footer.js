@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal";
+import Fade from "../reveal";
 
 const Footer = ({ data }) => {
   if (!data) return null;

@@ -13,7 +13,7 @@
     "react-dom": "^18.2.0",
     "react-ga": "^3.3.1",
     "react-grid-system": "^8.1.8",
-    "react-reveal": "^1.2.2",
+    "framer-motion": "^11.0.0",
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
     "react-zmage": "^0.8.5-beta.37",
