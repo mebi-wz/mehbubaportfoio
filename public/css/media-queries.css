@@ -119,6 +119,9 @@
       max-width: none !important;
    }
    
+   .hide-mobile { display: none !important; }
+   .show-mobile { display: block !important; }
+   
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
