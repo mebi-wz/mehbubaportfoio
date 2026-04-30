@@ -15,8 +15,8 @@
    --btn-secondary-hover-bg: rgba(255, 255, 255, 0.15);
 }
 
-.hide-mobile { display: block; }
-.show-mobile { display: none; }
+.hide-mobile { display: block !important; }
+.show-mobile { display: none !important; }
 
 [data-theme="light"] {
    --bg-color: #ffffff;

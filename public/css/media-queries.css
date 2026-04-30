@@ -120,7 +120,7 @@
    }
    
    .hide-mobile { display: none !important; }
-   .show-mobile { display: block !important; }
+   .show-mobile { display: flex !important; }
    
    /* mobile navigation
    -------------------------------------------------------------------- */
