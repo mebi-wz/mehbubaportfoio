@@ -14,7 +14,12 @@ const App = () => {
   const [resumeData, setResumeData] = useState({});
 
   useEffect(() => {
+    // Initial theme setup to prevent flicker
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
     ReactGA.initialize("UA-110570651-1");
+
     ReactGA.pageview(window.location.pathname);
 
     const getResumeData = async () => {

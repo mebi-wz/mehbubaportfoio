@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Fade from "../reveal";
 import { Container, Row, Col } from "react-grid-system";
+import ThemeToggle from "./ThemeToggle";
 
 const Typewriter = ({ text, delay = 0 }) => {
   const [currentText, setCurrentText] = useState('');
@@ -18,9 +19,10 @@ const Typewriter = ({ text, delay = 0 }) => {
       const timeout = setTimeout(() => {
         setCurrentText(prevText => prevText + text[currentIndex]);
         setCurrentIndex(prevIndex => prevIndex + 1);
-      }, 50); // fast typing speed
+      }, 20); // significantly faster typing speed
       return () => clearTimeout(timeout);
     }
+
   }, [currentIndex, text, started]);
 
   return <span>{currentText}<span className="cursor-blink">|</span></span>;
@@ -83,8 +85,13 @@ const Header = ({ data }) => {
           <li className={activeSection === 'contact' ? 'current' : ''}>
             <a className="smoothscroll" href="#contact">Contact</a>
           </li>
+          <li>
+            <ThemeToggle />
+          </li>
         </ul>
       </nav>
+
+
 
       <Container className="banner">
         <Row style={{ alignItems: "center" }}>
