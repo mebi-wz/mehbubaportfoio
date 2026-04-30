@@ -105,6 +105,8 @@
 /* mobile wide/smaller tablets
 ---------------------------------------------------------------------- */
 
+@media only screen and (max-width: 767px) {
+
    /* modern components responsiveness */
    .row {
       width: 92% !important;
