@@ -161,12 +161,6 @@
         "url": "https://github.com/mebi-wz"
       },
       {
-        "title": "Biometric Attendance System",
-        "category": "Implemented real-time biometric hardware integration with Odoo HR, automating attendance tracking and late-entry reporting for large-scale workforces.",
-        "image": "03.png",
-        "url": "https://github.com/mebi-wz"
-      },
-      {
         "title": "Multi-Level Approval Module",
         "category": "Developed a flexible, multi-stage approval engine used across procurement, HR, and finance to enforce enterprise-grade security and hierarchical validation.",
         "image": "approval.png",
