@@ -43,7 +43,7 @@
         "description": "Graduated with Honors in Computer Science, focusing on Software Engineering disciplines.",
         "certificates": [
           {
-            "name": "Hakaton",
+            "name": "Hackathon",
             "link": "https://drive.google.com/file/d/1kBy_Z1HjrMRgaazzMgosDJysx1iwNz9v/view?usp=drive_link"
           },
           {
@@ -108,38 +108,50 @@
     "projects": [
       {
         "title": "Foreign & Local Procurement",
-        "category": "Comprehensive Odoo workflow automation for global sourcing, dynamic vendor management, and multi-currency landed cost tracking.",
+        "category": "Architected complex procurement workflows in Odoo, integrating vendor management, purchase agreements, and multi-stage bidding for seamless supply chain operations.",
         "image": "procurement.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Sales & Export Management",
-        "category": "End-to-end sales pipelines customized for international trade, automated export documentation, and comprehensive logistics tracking.",
+        "category": "Modernized global sales operations by implementing custom export manufacturing workflows, automated shipping documentation, and multi-currency contract tracking.",
         "image": "sales.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Workshop Management",
-        "category": "Equipment lifecycle tracking, digitized job cards, predictive maintenance scheduling, and dynamic resource allocation within Odoo.",
+        "category": "Built a comprehensive vehicle and machine workshop module to track job orders, parts inventory, and technician assignments with real-time analytics.",
         "image": "inventory.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Accounting & HR Management",
-        "category": "Unified financial reporting, localized payroll automation, multi-level approval systems, and complete employee lifecycle management.",
+        "category": "Optimized financial and human resource processes across Community and Enterprise editions, ensuring precise payroll automation and regulatory compliance.",
         "image": "accounting.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Advanced Integrations & Microservices",
-        "category": "Built robust microservices architecture for Odoo, integrating hardware POS machines and setting up automated Email/SMS notification gateways.",
+        "category": "Integrated Odoo with third-party APIs and microservices, enabling high-performance data synchronization and automated business intelligence reporting.",
         "image": "export.png",
         "url": "https://github.com/mebi-wz"
       },
       {
-        "title": "Asset & Attendance Systems",
-        "category": "Streamlined internal HR operations with biometric attendance integrations and deployed comprehensive asset lifecycle management tracking.",
+        "title": "Asset Management System",
+        "category": "Designed a robust asset lifecycle tracking system, managing depreciation, maintenance scheduling, and allocation for high-value organizational assets.",
+        "image": "inventory.png",
+        "url": "https://github.com/mebi-wz"
+      },
+      {
+        "title": "Biometric Attendance System",
+        "category": "Implemented real-time biometric hardware integration with Odoo HR, automating attendance tracking and late-entry reporting for large-scale workforces.",
         "image": "employee.png",
+        "url": "https://github.com/mebi-wz"
+      },
+      {
+        "title": "Multi-Level Approval Module",
+        "category": "Developed a flexible, multi-stage approval engine used across procurement, HR, and finance to enforce enterprise-grade security and hierarchical validation.",
+        "image": "export.png",
         "url": "https://github.com/mebi-wz"
       }
     ]
