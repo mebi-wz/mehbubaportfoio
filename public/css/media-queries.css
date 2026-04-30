@@ -111,7 +111,7 @@
       height: auto !important;
       min-height: 100vh !important;
       padding-top: 100px !important;
-      padding-bottom: 60px !important;
+      padding-bottom: 100px !important; /* Increased from 60px */
    }
    /* modern components responsiveness */
    .row {
@@ -260,6 +260,12 @@
    .hero-soft-skills-wrapper {
       max-width: 100%;
       padding: 0 20px;
+      margin-bottom: 30px;
+   }
+   
+   /* Space between contact cards and bio in About */
+   .contact-card-small {
+      margin-bottom: 40px !important;
    }
 
    /* header social links */

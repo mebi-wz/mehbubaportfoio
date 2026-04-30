@@ -127,13 +127,6 @@ const Header = ({ data }) => {
                 </div>
               </div>
             </Fade>
-            <Fade bottom duration={1200} delay={3000}>
-              <div className="hero-soft-skills-wrapper">
-                <span className="floating-skill-pill pill-delay-1"><i className="fa fa-linux"></i> Comfortable working in Linux environments</span>
-                <span className="floating-skill-pill pill-delay-2"><i className="fa fa-code"></i> Strong debugging and problem-solving mindset</span>
-                <span className="floating-skill-pill pill-delay-3"><i className="fa fa-shield"></i> Trusted with production systems and critical fixes</span>
-              </div>
-            </Fade>
           </Col>
           <Col md={7} className="banner-text">
             <Fade bottom duration={1000}>
@@ -141,6 +134,13 @@ const Header = ({ data }) => {
             </Fade>
             <Fade bottom duration={1200} delay={300}>
               <h3><Typewriter text={description || ""} delay={1100} /></h3>
+            </Fade>
+            <Fade bottom duration={1200} delay={3000}>
+              <div className="hero-soft-skills-wrapper">
+                <span className="floating-skill-pill pill-delay-1"><i className="fa fa-linux"></i> Comfortable working in Linux environments</span>
+                <span className="floating-skill-pill pill-delay-2"><i className="fa fa-code"></i> Strong debugging and problem-solving mindset</span>
+                <span className="floating-skill-pill pill-delay-3"><i className="fa fa-shield"></i> Trusted with production systems and critical fixes</span>
+              </div>
             </Fade>
             <Fade bottom duration={1200} delay={600}>
               <div className="modern-actions">
