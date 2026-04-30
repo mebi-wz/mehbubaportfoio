@@ -530,7 +530,7 @@ ul#nav {
    justify-content: center;
    list-style: none;
    margin: 0;
-   padding: 0;
+   padding: 0 40px;
 }
 
 ul#nav li {
@@ -571,17 +571,17 @@ ul#nav li a:hover, ul#nav li.current a {
 .nav-social-wrapper {
    display: flex;
    align-items: center;
-   margin-left: 20px !important;
+   margin-left: auto !important; /* Pushes to the right */
 }
 
 .nav-social-links {
    display: flex;
-   gap: 15px;
+   gap: 20px;
 }
 
 .nav-social-links a {
    color: var(--text-muted);
-   font-size: 18px;
+   font-size: 24px; /* Larger icons */
    transition: all 0.3s ease;
 }
 
