@@ -568,7 +568,41 @@ ul#nav li a:hover, ul#nav li.current a {
    color: var(--primary-color);
 }
 
+.nav-social-wrapper {
+   display: flex;
+   align-items: center;
+   margin-left: 20px !important;
+}
+
+.nav-social-links {
+   display: flex;
+   gap: 15px;
+}
+
+.nav-social-links a {
+   color: var(--text-muted);
+   font-size: 18px;
+   transition: all 0.3s ease;
+}
+
+.nav-social-links a:hover {
+   color: var(--primary-color);
+   transform: translateY(-2px);
+}
+
+.nav-theme-toggle {
+   margin-left: 10px !important;
+}
+
+@media only screen and (max-width: 768px) {
+   .nav-social-wrapper {
+      margin: 15px 0 !important;
+      justify-content: center;
+   }
+}
+
 .mobile-btn {
+
    display: none;
 }
 

@@ -85,11 +85,21 @@ const Header = ({ data }) => {
           <li className={activeSection === 'contact' ? 'current' : ''}>
             <a className="smoothscroll" href="#contact">Contact</a>
           </li>
-          <li>
+          <li className="nav-social-wrapper">
+            <div className="nav-social-links">
+              {social && social.map((network) => (
+                <a key={network.name} href={network.url} target="_blank" rel="noreferrer" title={network.name}>
+                  <i className={network.className}></i>
+                </a>
+              ))}
+            </div>
+          </li>
+          <li className="nav-theme-toggle">
             <ThemeToggle />
           </li>
         </ul>
       </nav>
+
 
 
 
