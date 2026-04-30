@@ -8,7 +8,7 @@ const About = ({ data }) => {
 
   const { name, image, bio, address, phone, email, resumedownload } = data;
   const profilepic = "images/" + image;
-  const { street, city, state, zip } = address;
+  const { city, state } = address;
 
   return (
     <section id="about">

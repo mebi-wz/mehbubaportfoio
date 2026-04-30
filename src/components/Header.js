@@ -53,7 +53,7 @@ const Header = ({ data }) => {
   
   if (!data) return null;
 
-  const { project, github, name, description, social, email, phone } = data;
+  const { github, name, description, social, email, phone } = data;
   const linkedinUrl = social?.find(s => s.name === "linkedin")?.url;
 
   return (

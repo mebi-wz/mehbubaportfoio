@@ -116,7 +116,7 @@
       {
         "title": "Workshop Management",
         "category": "Equipment lifecycle tracking, digitized job cards, predictive maintenance scheduling, and dynamic resource allocation within Odoo.",
-        "image": "workshop.png",
+        "image": "inventory.png",
         "url": "https://github.com/mebi-wz"
       },
       {
@@ -128,13 +128,13 @@
       {
         "title": "Advanced Integrations & Microservices",
         "category": "Built robust microservices architecture for Odoo, integrating hardware POS machines and setting up automated Email/SMS notification gateways.",
-        "image": "integration.png",
+        "image": "export.png",
         "url": "https://github.com/mebi-wz"
       },
       {
         "title": "Asset & Attendance Systems",
         "category": "Streamlined internal HR operations with biometric attendance integrations and deployed comprehensive asset lifecycle management tracking.",
-        "image": "asset.png",
+        "image": "employee.png",
         "url": "https://github.com/mebi-wz"
       }
     ]
