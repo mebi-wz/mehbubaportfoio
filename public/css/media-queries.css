@@ -182,7 +182,11 @@
 	#nav-wrap:target > ul#nav	{
 	   display: block;
       padding: 30px 20px 48px 20px;
-      background: #1f2024;
+      background: var(--surface-color);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
       margin: 0 30px;
       clear: both;
    }
@@ -193,7 +197,7 @@
       margin: 0 auto; 
       padding: 0 4%;           
       text-align: left;
-      border-bottom: 1px solid #2D2E34;
+      border-bottom: 1px solid var(--glass-border);
       border-bottom-style: dotted; 
    }
   
