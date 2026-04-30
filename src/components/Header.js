@@ -143,7 +143,7 @@ const Header = ({ data }) => {
                 </a>
                 {telegramUrl && (
                   <a href={telegramUrl} className="modern-btn btn-secondary">
-                    <i className="fa fa-paper-plane"></i> Telegram
+                    <i className="fab fa-telegram"></i> Telegram
                   </a>
                 )}
               </div>

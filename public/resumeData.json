@@ -29,7 +29,7 @@
       {
         "name": "telegram",
         "url": "https://t.me/mehbubaz",
-        "className": "fa fa-paper-plane"
+        "className": "fab fa-telegram"
       }
     ]
   },
