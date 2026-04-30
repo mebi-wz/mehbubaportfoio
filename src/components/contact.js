@@ -99,9 +99,13 @@ const Contact = ({ data }) => {
               <div className="social-card">
                 <h4>Social Network</h4>
                 <ul className="social-links">
-                  <li><a href="https://www.linkedin.com/in/mehbubazed/"><i className="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://github.com/mebi-wz"><i className="fa fa-github"></i></a></li>
-                  <li><a href="https://t.me/mehbubaz"><i className="fa fa-paper-plane"></i></a></li>
+                  {data.social.map((network) => (
+                    <li key={network.name}>
+                      <a href={network.url}>
+                        <i className={network.className}></i>
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

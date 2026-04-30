@@ -25,6 +25,11 @@
         "name": "github",
         "url": "https://github.com/mebi-wz",
         "className": "fa fa-github"
+      },
+      {
+        "name": "telegram",
+        "url": "https://t.me/mehbubaz",
+        "className": "fa fa-paper-plane"
       }
     ]
   },

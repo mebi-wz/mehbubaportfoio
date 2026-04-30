@@ -55,6 +55,7 @@ const Header = ({ data }) => {
 
   const { github, name, description, social, email, phone } = data;
   const linkedinUrl = social?.find(s => s.name === "linkedin")?.url;
+  const telegramUrl = social?.find(s => s.name === "telegram")?.url;
 
   return (
     <header id="home" className="modern-hero">
@@ -137,9 +138,14 @@ const Header = ({ data }) => {
                 <a className="smoothscroll modern-btn btn-primary" href="#contact">
                   <i className="fa fa-envelope"></i> Contact Me
                 </a>
-                <a href={github} className="modern-btn btn-secondary">
+                <a href={github} className="modern-btn btn-secondary" style={{ marginRight: "10px" }}>
                   <i className="fa fa-github"></i> GitHub
                 </a>
+                {telegramUrl && (
+                  <a href={telegramUrl} className="modern-btn btn-secondary">
+                    <i className="fa fa-paper-plane"></i> Telegram
+                  </a>
+                )}
               </div>
             </Fade>
             <Fade bottom duration={1200} delay={1500}>
