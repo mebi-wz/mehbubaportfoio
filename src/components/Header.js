@@ -149,16 +149,12 @@ const Header = ({ data }) => {
               </div>
             </Fade>
             <Fade bottom duration={1200} delay={1500}>
-              <div className="hero-contact-card" style={{ marginBottom: "15px" }}>
-                <p>
-                  <Typewriter text="Odoo-focused Software Developer with hands-on experience in ERP customization, implementation, and optimization across Odoo Community and Enterprise (Odoo.sh)." delay={2000} />
-                </p>
-              </div>
-            </Fade>
-            <Fade bottom duration={1200} delay={10500}>
               <div className="hero-contact-card">
                 <p>
-                  <Typewriter text={`Available for Odoo ERP customization & backend architecture services. Contact: ${email} | ${phone}`} delay={11500} />
+                  <Typewriter 
+                    text={`Odoo-focused Software Developer with hands-on experience in ERP customization, implementation, and optimization (Odoo.sh). Available for ERP services. Contact: ${email} | ${phone}`} 
+                    delay={2000} 
+                  />
                 </p>
               </div>
             </Fade>
