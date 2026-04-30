@@ -374,7 +374,7 @@ header .banner-text h3 {
 .hero-contact-card p {
    margin: 0;
    font-size: 15px;
-   color: rgba(255, 255, 255, 0.9);
+   color: var(--text-color);
    font-weight: 400;
 }
 
@@ -388,9 +388,9 @@ header .banner-text h3 {
 }
 
 .floating-skill-pill {
-   background: rgba(2, 6, 23, 0.6);
+   background: var(--surface-color);
    border: 1px solid var(--primary-color);
-   color: rgba(255, 255, 255, 0.9);
+   color: var(--text-color);
    padding: 8px 16px;
    border-radius: 20px;
    font-size: 13px;
@@ -607,7 +607,7 @@ ul#nav li a:hover, ul#nav li.current a {
 .about-bio-modern p {
    font-size: 20px;
    line-height: 1.9;
-   color: rgba(255, 255, 255, 0.85);
+   color: var(--text-color);
    font-weight: 300;
 }
 
