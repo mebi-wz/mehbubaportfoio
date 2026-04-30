@@ -16,7 +16,7 @@
 }
 
 [data-theme="light"] {
-   --bg-color: #f1f5f9;
+   --bg-color: #ffffff;
    --surface-color: #ffffff;
    --primary-color: #059669;
    --accent-color: #10b981;
@@ -124,7 +124,7 @@ header.modern-hero::before {
    transform: translate(-50%, -50%);
    width: 600px;
    height: 600px;
-   background: radial-gradient(circle, rgba(16, 185, 129, 0.4) 0%, rgba(15, 23, 42, 0) 70%);
+   background: radial-gradient(circle, rgba(16, 185, 129, 0.4) 0%, transparent 70%);
    border-radius: 50%;
    filter: blur(80px);
    z-index: 1;

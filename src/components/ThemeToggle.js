@@ -5,23 +5,29 @@ const ThemeToggle = () => {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
+    const metaThemeColor = document.getElementById('theme-color-meta');
     if (savedTheme === 'dark') {
       setIsDarkMode(true);
       document.documentElement.setAttribute('data-theme', 'dark');
+      if (metaThemeColor) metaThemeColor.setAttribute('content', '#0f172a');
     } else {
       setIsDarkMode(false);
       document.documentElement.setAttribute('data-theme', 'light');
+      if (metaThemeColor) metaThemeColor.setAttribute('content', '#ffffff');
     }
   }, []);
 
-
-
-
   const toggleTheme = () => {
     const newTheme = isDarkMode ? 'light' : 'dark';
+    const metaThemeColor = document.getElementById('theme-color-meta');
+    
     setIsDarkMode(!isDarkMode);
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+    
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', newTheme === 'dark' ? '#0f172a' : '#ffffff');
+    }
   };
 
   return (
