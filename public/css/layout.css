@@ -530,7 +530,7 @@ ul#nav {
    justify-content: center;
    list-style: none;
    margin: 0;
-   padding: 0 40px;
+   padding: 0;
 }
 
 ul#nav li {
@@ -568,36 +568,14 @@ ul#nav li a:hover, ul#nav li.current a {
    color: var(--primary-color);
 }
 
-.nav-social-wrapper {
-   display: flex;
-   align-items: center;
-   margin-left: auto !important; /* Pushes to the right */
-}
-
-.nav-social-links {
-   display: flex;
-   gap: 20px;
-}
-
-.nav-social-links a {
-   color: var(--text-muted);
-   font-size: 24px; /* Larger icons */
-   transition: all 0.3s ease;
-}
-
-.nav-social-links a:hover {
-   color: var(--primary-color);
-   transform: translateY(-2px);
-}
-
 .nav-theme-toggle {
-   margin-left: 10px !important;
+   margin-left: 20px !important;
 }
 
 @media only screen and (max-width: 768px) {
-   .nav-social-wrapper {
+   .nav-theme-toggle {
       margin: 15px 0 !important;
-      justify-content: center;
+      text-align: center;
    }
 }
 

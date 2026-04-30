@@ -15,8 +15,9 @@ const App = () => {
 
   useEffect(() => {
     // Initial theme setup to prevent flicker
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
+
 
 
     ReactGA.initialize("UA-110570651-1");
