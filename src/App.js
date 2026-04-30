@@ -15,8 +15,9 @@ const App = () => {
 
   useEffect(() => {
     // Initial theme setup to prevent flicker
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
+
 
 
 
