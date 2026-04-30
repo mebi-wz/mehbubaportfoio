@@ -10,6 +10,9 @@
    --glass-bg: rgba(15, 23, 42, 0.6);
    --glass-border: rgba(255, 255, 255, 0.08);
    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+   --heading-gradient-start: #ffffff;
+   --btn-secondary-bg: rgba(255, 255, 255, 0.05);
+   --btn-secondary-hover-bg: rgba(255, 255, 255, 0.15);
 }
 
 [data-theme="light"] {
@@ -22,7 +25,11 @@
    --glass-bg: rgba(255, 255, 255, 0.7);
    --glass-border: rgba(0, 0, 0, 0.1);
    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+   --heading-gradient-start: #0f172a;
+   --btn-secondary-bg: rgba(15, 23, 42, 0.05);
+   --btn-secondary-hover-bg: rgba(15, 23, 42, 0.1);
 }
+
 
 body { 
    background: var(--bg-color);
@@ -146,10 +153,10 @@ header .banner-text h1 {
    font-size: clamp(3.5rem, 8vw, 6rem);
    line-height: 1.1;
    font-weight: 800;
-   color: #fff;
+   color: var(--text-color);
    letter-spacing: -0.04em;
    margin-bottom: 24px;
-   background: linear-gradient(135deg, #fff 20%, var(--primary-color) 100%);
+   background: linear-gradient(135deg, var(--heading-gradient-start) 20%, var(--primary-color) 100%);
    -webkit-background-clip: text;
    background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -340,12 +347,13 @@ header .banner-text h1 {
    background: #005582;
    transform: translateY(-2px);
    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+   color: #fff;
 }
 
 header .banner-text h3 {
    font-size: clamp(1.4rem, 3vw, 2.2rem);
    font-weight: 300;
-   color: rgba(255, 255, 255, 0.85);
+   color: var(--text-muted);
    margin: 0 0 40px 0;
    line-height: 1.6;
    max-width: 950px;
@@ -446,7 +454,7 @@ header .banner-text h3 {
 
 .modern-btn.btn-primary {
    background: var(--primary-color);
-   color: #fff;
+   color: #fff !important;
    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
    border: 1px solid var(--accent-color);
 }
@@ -458,17 +466,17 @@ header .banner-text h3 {
 }
 
 .modern-btn.btn-secondary {
-   background: rgba(255, 255, 255, 0.05);
-   color: #fff;
+   background: var(--btn-secondary-bg);
+   color: var(--text-color);
    backdrop-filter: blur(10px);
    border: 1px solid var(--glass-border);
 }
 
 .modern-btn.btn-secondary:hover {
    transform: translateY(-4px);
-   background: rgba(255, 255, 255, 0.15);
-   border-color: rgba(255, 255, 255, 0.4);
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+   background: var(--btn-secondary-hover-bg);
+   border-color: var(--primary-color);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .scrolldown {
@@ -485,10 +493,10 @@ header .banner-text h3 {
    justify-content: center;
    width: 60px;
    height: 60px;
-   background: rgba(255, 255, 255, 0.05);
+   background: var(--btn-secondary-bg);
    border: 1px solid var(--glass-border);
    border-radius: 50%;
-   color: #fff;
+   color: var(--text-color);
    font-size: 24px;
    transition: all 0.3s ease;
    backdrop-filter: blur(8px);
@@ -557,7 +565,7 @@ ul#nav li a:hover::after, ul#nav li.current a::after {
 }
 
 ul#nav li a:hover, ul#nav li.current a {
-   color: var(--text-color);
+   color: var(--primary-color);
 }
 
 .mobile-btn {
@@ -589,7 +597,7 @@ ul#nav li a:hover, ul#nav li.current a {
    font-weight: 800;
    margin-bottom: 24px;
    letter-spacing: -0.02em;
-   background: linear-gradient(135deg, #fff 30%, var(--primary-color) 100%);
+   background: linear-gradient(135deg, var(--heading-gradient-start) 30%, var(--primary-color) 100%);
    -webkit-background-clip: text;
    background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -635,10 +643,10 @@ ul#nav li a:hover, ul#nav li.current a {
 
 .contact-card-small h3 {
    font-size: 18px;
-   color: #fff;
+   color: var(--text-color);
    margin-bottom: 20px;
    padding-bottom: 12px;
-   border-bottom: 1px solid rgba(255,255,255,0.1);
+   border-bottom: 1px solid var(--glass-border);
    letter-spacing: 0.5px;
 }
 
@@ -924,7 +932,7 @@ ul#nav li a:hover, ul#nav li.current a {
 
 .education-certificates h4 {
    font-size: 16px;
-   color: #fff;
+   color: var(--text-color);
    margin-bottom: 12px;
 }
 
@@ -968,7 +976,7 @@ ul#nav li a:hover, ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #020617;
+   background: var(--bg-color);
    padding: 140px 0;
    border-top: 1px solid var(--glass-border);
 }
@@ -1028,16 +1036,16 @@ ul#nav li a:hover, ul#nav li.current a {
 
 .portfolio-item .portfolio-item-meta {
    padding: 32px;
-   background: rgba(15, 23, 42, 0.7);
+   background: var(--surface-color);
    backdrop-filter: blur(12px);
    -webkit-backdrop-filter: blur(12px);
-   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   border-top: 1px solid var(--glass-border);
 }
 
 .portfolio-item .portfolio-item-meta h5 {
    font-size: 20px;
    font-weight: 700;
-   color: #fff;
+   color: var(--text-color);
    margin-bottom: 12px;
    letter-spacing: -0.01em;
 }
@@ -1045,7 +1053,7 @@ ul#nav li a:hover, ul#nav li.current a {
 .portfolio-item .portfolio-item-meta p {
    font-size: 15px;
    line-height: 1.6;
-   color: rgba(255, 255, 255, 0.8);
+   color: var(--text-muted);
 }
 
 /* ------------------------------------------------------------------ */
