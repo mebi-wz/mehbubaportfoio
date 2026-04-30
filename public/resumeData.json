@@ -133,7 +133,7 @@
       {
         "title": "Workshop Management",
         "category": "Built a comprehensive vehicle and machine workshop module to track job orders, parts inventory, and technician assignments with real-time analytics.",
-        "image": "06.png",
+        "image": "workshop.png",
         "url": "https://github.com/mebi-wz"
       },
       {
@@ -157,19 +157,14 @@
       {
         "title": "Asset Management System",
         "category": "Designed a robust asset lifecycle tracking system, managing depreciation, maintenance scheduling, and allocation for high-value organizational assets.",
-        "image": "02.png",
+        "image": "asset.png",
         "url": "https://github.com/mebi-wz"
       },
-      {
-        "title": "Biometric Attendance System",
-        "category": "Implemented real-time biometric hardware integration with Odoo HR, automating attendance tracking and late-entry reporting for large-scale workforces.",
-        "image": "03.png",
-        "url": "https://github.com/mebi-wz"
-      },
+  
       {
         "title": "Multi-Level Approval Module",
         "category": "Developed a flexible, multi-stage approval engine used across procurement, HR, and finance to enforce enterprise-grade security and hierarchical validation.",
-        "image": "04.png",
+        "image": "approval.png",
         "url": "https://github.com/mebi-wz"
       }
     ]
