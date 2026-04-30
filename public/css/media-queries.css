@@ -105,8 +105,12 @@
 /* mobile wide/smaller tablets
 ---------------------------------------------------------------------- */
 
-@media only screen and (max-width: 767px) {
-
+   /* modern components responsiveness */
+   .row {
+      width: 92% !important;
+      max-width: none !important;
+   }
+   
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
@@ -201,10 +205,18 @@
       padding-bottom: 12px;
       padding-top: 6px;
    }
-   header .banner-text h1 { font: 68px/1.1em 'opensans-bold', sans-serif; }
+   header .banner-text {
+      text-align: center;
+      padding: 0 15px;
+   }
+   header .banner-text h1 { 
+      font: 38px/1.1em 'opensans-bold', sans-serif; 
+      margin-bottom: 12px;
+   }
    header .banner-text h3 {
-      font: 16px/1.9em 'librebaskerville-regular', serif;
-      width: 85%;
+      font: 15px/1.8em 'librebaskerville-regular', serif;
+      width: 95%;
+      margin: 0 auto 24px auto;
    }
    header .banner-text hr {
       width: 80%;
@@ -215,16 +227,19 @@
    .modern-actions {
       flex-direction: column;
       align-items: center;
-      gap: 15px;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
    }
    .modern-btn {
       width: 100%;
-      max-width: 300px;
-      margin-right: 0 !important;
+      max-width: 280px;
+      margin: 0 auto !important;
+      padding: 12px 24px;
    }
    .hero-contact-card {
-      width: 100%;
-      margin-top: 30px;
+      width: 90%;
+      margin: 20px auto 0 auto;
       padding: 12px 16px;
       text-align: center;
       border-left: none;
@@ -266,8 +281,22 @@
       text-align: center;
    }
    #resume h1 { letter-spacing: 3px; }
-   #resume .main-col { padding-right: 30px; }
-   #resume h3, #resume .info { text-align: center; }
+   #resume .main-col { padding-right: 0px; }
+   #resume h3, #resume .info { text-align: left; }
+   
+   .timeline-container {
+      padding-left: 20px;
+      margin-left: 5px;
+   }
+   .resume-item {
+      padding: 25px;
+   }
+   .resume-item::before {
+      left: -32px;
+      top: 30px;
+      width: 12px;
+      height: 12px;
+   }
       
    .bars { width: 100%; }
 
@@ -381,6 +410,10 @@
 
 @media only screen and (max-width: 480px) {
 
+   .row {
+      width: 95% !important;
+   }
+
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap ul#nav { width: auto; float: none; }
@@ -389,13 +422,13 @@
    -------------------------------------------------------------------- */
    header .banner { padding-top: 24px; }
    header .banner-text h1 {
-      font: 40px/1.1em 'opensans-bold', sans-serif;      
-      margin: 0 auto 24px auto;
+      font: 32px/1.1em 'opensans-bold', sans-serif;      
+      margin: 0 auto 18px auto;
    }
    header .banner-text h3 {
-      font: 14px/1.9em 'librebaskerville-regular', sans-serif;
+      font: 14px/1.8em 'librebaskerville-regular', sans-serif;
       width: 95%;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
    }
    .modern-actions {
       gap: 10px;
