@@ -1346,7 +1346,40 @@ footer .copyright {
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    padding: 8px 20px;
+    padding: 8px 16px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Lightbox Responsiveness */
+@media only screen and (max-width: 768px) {
+    .lightbox-content {
+        max-width: 95%;
+    }
+    .lightbox-image {
+        max-height: 70vh;
+    }
+    .lightbox-caption {
+        font-size: 14px;
+        padding: 6px 15px;
+        margin-top: 15px;
+    }
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Portfolio Grid Responsiveness */
+@media only screen and (max-width: 600px) {
+    #portfolio-wrapper {
+        display: block !important;
+    }
+    .portfolio-item {
+        width: 100% !important;
+        float: none !important;
+        padding: 0 15px !important;
+    }
 }
