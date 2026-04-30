@@ -125,9 +125,15 @@
         "url": "https://github.com/mebi-wz"
       },
       {
+        "title": "Inventory & Warehouse Management",
+        "category": "Architected multi-warehouse systems with real-time stock valuation, automated reordering rules, and advanced lot/serial number tracking for large-scale operations.",
+        "image": "inventory.png",
+        "url": "https://github.com/mebi-wz"
+      },
+      {
         "title": "Workshop Management",
         "category": "Built a comprehensive vehicle and machine workshop module to track job orders, parts inventory, and technician assignments with real-time analytics.",
-        "image": "inventory.png",
+        "image": "06.png",
         "url": "https://github.com/mebi-wz"
       },
       {
